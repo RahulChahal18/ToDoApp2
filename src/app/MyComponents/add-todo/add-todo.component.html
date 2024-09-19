@@ -1,0 +1,93 @@
+<div class="container my-5 p-4 bg-light rounded shadow-lg">
+    <h3 class="text-center text-primary mb-4">Add a Todo</h3>
+  
+    <form (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="title" class="form-label fw-bold">Todo Title</label>
+        <input
+          type="text"
+          [(ngModel)]="title"
+          class="form-control border-primary shadow-sm"
+          name="title1"
+          id="title"
+          placeholder="Enter your todo title"
+          required
+        >
+        <div class="invalid-feedback">
+          Please provide a title for the todo.
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="desc" class="form-label fw-bold">Todo Description</label>
+        <input
+          type="text"
+          [(ngModel)]="desc"
+          class="form-control border-primary shadow-sm"
+          name="desc"
+          id="desc"
+          placeholder="Enter a description"
+          required
+        >
+        <div class="invalid-feedback">
+          Please provide a description.
+        </div>
+      </div>
+  
+      <div class="d-grid gap-2">
+        <button
+          type="submit"
+          class="btn btn-primary btn-lg shadow-sm"
+        >
+          <i class="fas fa-plus-circle me-2"></i> Add Todo
+        </button>
+      </div>
+    </form>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="my-3">
+    <h4>Add a Todo</h4>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="title" class="form-label">Todo Title</label>
+            <input type="text" [(ngModel)]="title" class="form-control" name="title1" id="title" >
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">todo Description</label>
+            <input type="text" [(ngModel)]="desc" class="form-control" name="desc" id="desc">
+        </div>
+        
+        <button type="submit" class="btn btn-sm btn-primary" >Add Todo</button>
+    </form>
+</div> -->
